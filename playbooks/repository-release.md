@@ -13,6 +13,8 @@
 
 `ui-platform`はrepository releaseとnpm package releaseが分かれているため、この手順をそのまま適用しません。
 
+本番が1つのWeb Application（`dx-portal`・`jazmf-directory`）にもこの手順を適用しません。Web ApplicationはRelease Pleaseを使わず、`just release`がreleaseした日をversionにします（`v2026.11.3`、同じ日の2回目からは`v2026.11.3b`）。version の付け方の区分は[AI Development Platformのリリース方針](https://github.com/jazmf-dx/ai-dev-platform/blob/main/docs/release.md#applicationのversion)の「Applicationのversion」を、手順は各ApplicationのADRと`justfile`を正とします。
+
 ## 前提
 
 - latestのGitHub Releaseとtagが存在する
